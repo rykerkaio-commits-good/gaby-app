@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deja de ver tik tok xd</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Fondo -->
+    <div class="stars"></div>
+
+    <!-- APP -->
+    <main class="app">
+
+        <!-- ENCABEZADO -->
+        <header class="header">
+            <p class="small-text">Hola cachetona💙</p>
+
+            <h1>¿No tienes sueño verdad?</h1>
+
+            <p class="subtitle">
+                ¿Qué te gusaría hoy?
+            </p>
+        </header>
+
+
+        <!-- MENÚ PRINCIPAL -->
+        <section class="menu">
+
+            <button class="mode-card" onclick="openMode('night')">
+                <span class="icon">💙</span>
+                <span>
+                    <strong>Algo lindo que te quería decir</strong>
+                    <small>Talvez no lo dije pero si lo pensé</small>
+                </span>
+            </button>
+
+
+            <button class="mode-card" onclick="openMode('letters')">
+                <span class="icon">✍️</span>
+                <span>
+                    <strong>Cansada?Enojada?Estresada?</strong>
+                    <small>Seguro se te pasa aquí jeje</small>
+                </span>
+            </button>
+
+
+            <button class="mode-card" onclick="openMode('book')">
+                <span class="icon">💌</span>
+                <span>
+                    <strong>Cartas jeje</strong>
+                    <small>Talvez no te las dé en físico pero sí aquí</small>
+                </span>
+            </button>
+
+
+            <button class="mode-card" onclick="openMode('memories')">
+                <span class="icon">😍</span>
+                <span>
+                    <strong>Cosas lindas de tí 💙</strong>
+                    <small>Me encantas cachetona</small>
+                </span>
+            </button>
+
+
+            <button class="mode-card" onclick="openMode('questions')">
+                <span class="icon">😸</span>
+                <span>
+                    <strong>Si algo te da curiosidad de mí xd</strong>
+                    <small>No sé ni por qué hice esta parte</small>
+                </span>
+            </button>
+
+
+            <button class="mode-card" onclick="openMode('random')">
+                <span class="icon">👻</span>
+                <span>
+                    <strong>Nada más</strong>
+                    <small>Literal son bobadas jaja</small>
+                </span>
+            </button>
+
+
+            <button class="mode-card special" onclick="openMode('love')">
+                <span class="icon">❤️</span>
+                <span>
+                    <strong>Algo que quiero decirte</strong>
+                    <small>Esta parte es algo diferente...</small>
+                </span>
+            </button>
+
+        </section>
+
+
+        <!-- PIE -->
+        <footer>
+            <p>Mereces todo esto y más 💙</p>
+        </footer>
+
+    </main>
+
+
+    <!-- VENTANA DE CONTENIDO -->
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-button" onclick="closeMode()">×</button>
+
+            <div id="modal-icon" class="modal-icon">🌙</div>
+
+            <h2 id="modal-title">Título</h2>
+
+            <div id="modal-body">
+                Contenido
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
