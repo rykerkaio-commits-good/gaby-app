@@ -660,3 +660,177 @@ footer {
         transition: none;
     }
 }
+
+
+/* =========================
+   MENSAJE DE BIENVENIDA
+========================= */
+
+.welcome-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 70px 24px 35px;
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            #30265f 0%,
+            #171638 48%,
+            #080817 100%
+        );
+
+    color: var(--text-main);
+}
+
+.welcome-content {
+    width: min(680px, 100%);
+    margin: auto;
+
+    text-align: center;
+    overflow-wrap: anywhere;
+
+    animation: welcomeAppear 0.65s ease both;
+}
+
+.welcome-label {
+    margin-bottom: 24px;
+
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.welcome-content h2 {
+    margin-bottom: 30px;
+
+    color: var(--text-main);
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+}
+
+.welcome-message {
+    color: var(--text-soft);
+    font-size: clamp(16px, 2.2vw, 19px);
+    line-height: 1.95;
+}
+
+.welcome-message p {
+    margin-bottom: 22px;
+}
+
+.welcome-message p:last-child {
+    margin-bottom: 0;
+}
+
+.welcome-signature {
+    margin-top: 32px;
+
+    color: var(--pink);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.welcome-close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    color: var(--text-main);
+    font-size: 32px;
+    line-height: 1;
+
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.welcome-close:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: scale(1.05);
+}
+
+@keyframes welcomeAppear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ajustes para teléfonos */
+
+@media (max-width: 560px) {
+    .welcome-screen {
+        padding: 76px 23px 30px;
+    }
+
+    .welcome-label {
+        margin-bottom: 20px;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .welcome-content h2 {
+        margin-bottom: 24px;
+    }
+
+    .welcome-message {
+        line-height: 1.85;
+    }
+
+    .welcome-message p {
+        margin-bottom: 19px;
+    }
+
+    .welcome-signature {
+        margin-top: 26px;
+    }
+
+    .welcome-close {
+        top: 14px;
+        right: 14px;
+
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .welcome-content {
+        animation: none;
+    }
+
+    .welcome-close {
+        transition: none;
+    }
+}

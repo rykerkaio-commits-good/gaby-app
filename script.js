@@ -567,3 +567,20 @@ window.mostrarCapitulo = mostrarCapitulo;
 window.mostrarMensaje = mostrarMensaje;
 
 window.mostrarNota = mostrarNota;
+
+
+/* =========================
+   MENSAJE DE BIENVENIDA
+========================= */
+
+const welcomeScreen = document.getElementById("welcome-screen");
+const welcomeClose = document.getElementById("welcome-close");
+
+if (welcomeScreen && welcomeClose) {
+
+    // Cerrar la bienvenida y mostrar la app
+    welcomeClose.addEventListener("click", function () {
+        welcomeScreen.style.display = "none";
+    });
+
+}
