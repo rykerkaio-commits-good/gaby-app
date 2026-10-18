@@ -8,7 +8,9 @@ import {
 const firebaseConfig = {
     
   
+
 apiKey: "AIzaSyDa3cewy45Wcgkfn7vWLX6dMVwla2OBWLY",
+
 
 
     authDomain: "chatgabyyyo.firebaseapp.com",
