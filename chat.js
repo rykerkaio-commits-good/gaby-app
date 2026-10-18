@@ -6,7 +6,9 @@ import {
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDa3cewy45Wcgkfn7vWL6XdMVwla2OBWLY",
+    
+  apiKey: "AIzaSyDa3cewy45Wcgkfn7vWLX6dMVwla2OBWLY",
+
     authDomain: "chatgabyyyo.firebaseapp.com",
     databaseURL: "https://chatgabyyyo-default-rtdb.firebaseio.com",
     projectId: "chatgabyyyo",
