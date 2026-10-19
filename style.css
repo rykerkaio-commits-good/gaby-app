@@ -834,3 +834,236 @@ footer {
         transition: none;
     }
 }
+
+
+
+/* =========================
+   CHAT COMPARTIDO
+========================= */
+
+#chat-configuracion {
+    width: min(900px, calc(100% - 32px));
+    margin: 50px auto 30px;
+    padding: 26px;
+    box-sizing: border-box;
+    color: #f5f3ff;
+    background: rgba(20, 24, 55, 0.88);
+    border: 1px solid rgba(147, 166, 255, 0.3);
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(12px);
+}
+
+.chat-encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.chat-encabezado h2 {
+    margin: 8px 0;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.chat-etiqueta {
+    color: #aabaff;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.chat-descripcion {
+    color: #d2d8f5;
+    line-height: 1.6;
+}
+
+.chat-corazon {
+    color: #b5c5ff;
+    font-size: 3rem;
+}
+
+#chat-estado {
+    color: #b8c9ff;
+    font-size: 0.9rem;
+}
+
+.chat-identidad {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 22px 0;
+}
+
+.chat-identidad label {
+    width: 100%;
+    color: #dce2ff;
+    font-size: 0.9rem;
+}
+
+#chat-nombre,
+#chat-texto {
+    min-width: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(180, 195, 255, 0.3);
+    border-radius: 13px;
+    padding: 12px 14px;
+    font: inherit;
+}
+
+#chat-nombre {
+    flex: 1;
+}
+
+#chat-texto {
+    width: 100%;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+#chat-nombre:focus,
+#chat-texto:focus {
+    outline: 2px solid #9eb2ff;
+    outline-offset: 2px;
+}
+
+#chat-nombre::placeholder,
+#chat-texto::placeholder {
+    color: #b7bfdc;
+}
+
+#chat-configuracion button {
+    padding: 12px 17px;
+    border: 0;
+    border-radius: 13px;
+    color: #172044;
+    background: #c5d1ff;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+#chat-configuracion button:hover {
+    background: #e0e6ff;
+    transform: translateY(-1px);
+}
+
+#chat-configuracion button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
+#chat-mensajes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 180px;
+    max-height: 420px;
+    overflow-y: auto;
+    padding: 16px;
+    background: rgba(7, 10, 29, 0.48);
+    border: 1px solid rgba(180, 195, 255, 0.16);
+    border-radius: 18px;
+    scroll-behavior: smooth;
+}
+
+.chat-vacio {
+    margin: auto;
+    padding: 35px 8px;
+    color: #bfc9ef;
+    text-align: center;
+}
+
+.chat-mensaje {
+    align-self: flex-start;
+    width: fit-content;
+    max-width: 85%;
+    padding: 12px 15px;
+    background: rgba(120, 139, 220, 0.18);
+    border: 1px solid rgba(180, 195, 255, 0.18);
+    border-radius: 15px 15px 15px 4px;
+    overflow-wrap: anywhere;
+}
+
+.chat-mensaje.chat-mio {
+    align-self: flex-end;
+    background: rgba(111, 140, 255, 0.22);
+    border-color: rgba(180, 195, 255, 0.35);
+    border-radius: 15px 15px 4px 15px;
+}
+
+.chat-mensaje-cabecera {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.chat-mensaje-cabecera strong {
+    color: #c9d5ff;
+}
+
+.chat-mensaje-cabecera time {
+    color: #bdc5e2;
+    font-size: 0.72rem;
+}
+
+.chat-mensaje-texto {
+    margin: 0;
+    line-height: 1.55;
+    white-space: pre-wrap;
+}
+
+#chat-formulario {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+#chat-formulario #chat-texto {
+    flex: 1;
+}
+
+.chat-solo-lector {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    #chat-configuracion {
+        width: calc(100% - 20px);
+        margin-top: 32px;
+        padding: 17px;
+        border-radius: 19px;
+    }
+
+    .chat-corazon {
+        font-size: 2rem;
+    }
+
+    #chat-formulario {
+        flex-direction: column;
+    }
+
+    #chat-formulario button {
+        width: 100%;
+    }
+
+    .chat-mensaje {
+        max-width: 94%;
+    }
+}

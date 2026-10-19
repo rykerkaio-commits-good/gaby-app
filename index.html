@@ -174,12 +174,66 @@
 
     </div>
 
-<!-- Conexión inicial del chat -->
+
+<!-- CHAT COMPARTIDO -->
 <section id="chat-configuracion">
-    <p id="chat-estado">Preparando conexión...</p>
-    <p>Identificador de este navegador:</p>
-    <code id="chat-uid">Esperando...</code>
+    <div class="chat-encabezado">
+        <div>
+            <p class="chat-etiqueta">UN LUGAR PARA NOSOTROS 💙</p>
+            <h2>Nuestro pequeño chat</h2>
+            <p class="chat-descripcion">
+                Para hablar, contarnos cosas y compartir nuestro día.
+            </p>
+        </div>
+        <span class="chat-corazon">♡</span>
+    </div>
+
+    <p id="chat-estado" role="status">
+        Preparando conexión...
+    </p>
+
+    <div class="chat-identidad">
+        <label for="chat-nombre">¿Cómo quieres aparecer?</label>
+        <input
+            id="chat-nombre"
+            type="text"
+            maxlength="40"
+            placeholder="Tu nombre o apodo"
+            autocomplete="nickname"
+        >
+        <button id="chat-guardar-nombre" type="button">
+            Guardar nombre
+        </button>
+    </div>
+
+    <div
+        id="chat-mensajes"
+        role="log"
+        aria-label="Mensajes del chat"
+        aria-live="polite"
+    >
+        <p class="chat-vacio">Aquí aparecerán nuestros mensajes 💙</p>
+    </div>
+
+    <form id="chat-formulario">
+        <label class="chat-solo-lector" for="chat-texto">
+            Escribe tu mensaje
+        </label>
+
+        <textarea
+            id="chat-texto"
+            maxlength="2000"
+            rows="2"
+            placeholder="Escribe algo bonito o cuéntame tu día..."
+            required
+        ></textarea>
+
+        <button id="chat-enviar" type="submit">
+            Enviar 💙
+        </button>
+    </form>
 </section>
+
 
 
 <script type="module" src="script.js"></script>
