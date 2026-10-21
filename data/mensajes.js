@@ -234,6 +234,41 @@ const mensajes = [
     {
         tipo: "normal",
         fecha: null,
+        titulo: "A veces me bloqueo xd",
+        texto: "Pues como ya te habrás dado cuenta, hay MUCHOS mensajes jajaja y es porque aparte de que mereces todo esto y más, hay tantas cosas que quiero decirte, perdón si a veces son largos los mensajes xd, pero es porque quiero que sepas lo mucho que te amo y amaré cachetona."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Suma",
+        texto: "1+1=3."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "31 Minutos y tú",
+        texto: "Una de las muchas cosas que quiero que veamos juntos es 31 Minutos, porque es algo muy especial que quisiera compartir contigo y me encantaría que vieras algunas cosas que me recuerdan a tí jeje."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Es una gran coincidencia",
+        texto: "Que literalmente seas todo lo que mis padres esperarían de la persona que es mi pareja y aún así ser lo que yo considero perfecto, y pues aunque hay cosas que ellos no saben xd, eres lo que más amo, adoro y aprecio de mi vida."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Te adoro",
+        texto: "Es complicado la verdad, pero eres tú xd, te adoroooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
         titulo: "Solo porque sí 💙",
         texto: "No necesitas hacer algo muy exagerado para que me gustes, literalmente tu existencia es perfecta y nada ni nadie logrará ser tan importante en mi vida como lo eres tú."
     }
