@@ -176,25 +176,32 @@ else if (mode === "book") {
     RECUERDOS
 */
 
+
 else if (mode === "memories") {
-
     icon.textContent = "😍";
-
     title.textContent = "Cosas lindas de ti";
 
-    body.innerHTML = recuerdos.map(recuerdo => `
+    body.innerHTML = `
+        <p class="section-intro">
+            Hay muchas cositas tuyas que me encantan.
+            Pulsa una tarjeta para descubrir por qué. 💗
+        </p>
 
-        <div class="memory">
-
-            <h3>${recuerdo.fecha}</h3>
-
-            <p>${recuerdo.texto}</p>
-
+        <div class="memory-grid">
+            ${recuerdos.map((recuerdo, index) => `
+                <button
+                    class="memory-card"
+                    onclick="mostrarRecuerdo(${index})"
+                >
+                    <span class="memory-card-icon">💗</span>
+                    <span class="memory-card-title">${recuerdo.titulo}</span>
+                    <span class="memory-card-hint">Pulsa para leer ✨</span>
+                </button>
+            `).join("")}
         </div>
-
-    `).join("");
-
+    `;
 }
+
 
 
     /*
@@ -205,33 +212,11 @@ else if (mode === "memories") {
     PREGUNTAS
 */
 
+
 else if (mode === "questions") {
-
-    icon.textContent = "😸";
-
-    title.textContent = "Si algo te da curiosidad de mí";
-
-    const pregunta =
-        preguntas[Math.floor(Math.random() * preguntas.length)];
-
-    body.innerHTML = `
-
-        <p>${pregunta.pregunta}</p>
-
-        <p class="question-answer">
-            ${pregunta.respuesta}
-        </p>
-
-        <button
-            class="content-option"
-            onclick="openMode('questions')"
-        >
-            🔄 Otra pregunta
-        </button>
-
-    `;
-
+    mostrarListaHistoria();
 }
+
 
 
     /*
@@ -286,6 +271,142 @@ else if (mode === "love") {
 }
 modal.classList.add("active");
 
+}
+
+
+/* =========================
+   COSAS LINDAS DE TI
+========================= */
+
+function mostrarRecuerdo(index) {
+    const recuerdo = recuerdos[index];
+
+    if (!recuerdo) return;
+
+    document.getElementById("modal-icon").textContent = "💗";
+    document.getElementById("modal-title").textContent = recuerdo.titulo;
+
+    document.getElementById("modal-body").innerHTML = `
+        <div class="memory-detail">
+            <div class="memory-detail-icon">💖</div>
+
+            <p>${recuerdo.texto}</p>
+
+            <button
+                class="content-option"
+                onclick="openMode('memories')"
+            >
+                ← Volver a las tarjetas
+            </button>
+        </div>
+    `;
+}
+
+
+/* =========================
+   MI HISTORIA POR CAPÍTULOS
+========================= */
+
+function mostrarListaHistoria() {
+    const icon = document.getElementById("modal-icon");
+    const title = document.getElementById("modal-title");
+    const body = document.getElementById("modal-body");
+
+    icon.textContent = "😸";
+    title.textContent = "Si algo te da curiosidad de mí";
+
+    body.innerHTML = `
+        <p class="section-intro">
+            Hay cosas de mí que quiero contarte poco a poco.
+            Elige el capítulo que quieras leer. 💙
+        </p>
+
+        <div class="story-chapter-list">
+            ${preguntas.map((capitulo, index) => `
+                <button
+                    class="story-chapter-option"
+                    onclick="mostrarHistoria(${index})"
+                >
+                    <span class="story-chapter-number">
+                        Capítulo ${index + 1}
+                    </span>
+
+                    <span class="story-chapter-title">
+                        ${capitulo.titulo}
+                    </span>
+
+                    <span class="story-chapter-subtitle">
+                        ${capitulo.subtitulo}
+                    </span>
+
+                    <span class="story-chapter-arrow">→</span>
+                </button>
+            `).join("")}
+        </div>
+    `;
+}
+
+
+function mostrarHistoria(index) {
+    const capitulo = preguntas[index];
+
+    if (!capitulo) return;
+
+    const icon = document.getElementById("modal-icon");
+    const title = document.getElementById("modal-title");
+    const body = document.getElementById("modal-body");
+
+    icon.textContent = "📖";
+    title.textContent = capitulo.titulo;
+
+    const parrafos = capitulo.parrafos
+        .map(parrafo => `<p class="story-paragraph">${parrafo}</p>`)
+        .join("");
+
+    body.innerHTML = `
+        <article class="story-reading">
+
+            <div class="story-chapter-label">
+                Capítulo ${index + 1} de ${preguntas.length}
+            </div>
+
+            <h3 class="story-subtitle">
+                ${capitulo.subtitulo}
+            </h3>
+
+            <div class="story-paragraphs">
+                ${parrafos}
+            </div>
+
+            <button
+                class="content-option story-back-button"
+                onclick="mostrarListaHistoria()"
+            >
+                ☰ Volver a los capítulos
+            </button>
+
+            <div class="story-navigation">
+
+                <button
+                    class="story-nav-button"
+                    onclick="mostrarHistoria(${index - 1})"
+                    ${index === 0 ? "disabled" : ""}
+                >
+                    ← Anterior
+                </button>
+
+                <button
+                    class="story-nav-button"
+                    onclick="mostrarHistoria(${index + 1})"
+                    ${index === preguntas.length - 1 ? "disabled" : ""}
+                >
+                    Siguiente →
+                </button>
+
+            </div>
+
+        </article>
+    `;
 }
 
 
@@ -567,6 +688,12 @@ window.mostrarCapitulo = mostrarCapitulo;
 window.mostrarMensaje = mostrarMensaje;
 
 window.mostrarNota = mostrarNota;
+
+window.mostrarRecuerdo = mostrarRecuerdo;
+
+window.mostrarHistoria = mostrarHistoria;
+
+window.mostrarListaHistoria = mostrarListaHistoria;
 
 
 /* =========================
