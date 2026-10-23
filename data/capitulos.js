@@ -35,7 +35,7 @@ const capitulos = [
     {
         numero: 5,
         titulo: "Explicaciones jeje",
-        fechaDesbloqueo: "2026-10-24",
+        fechaDesbloqueo: "2026-10-23",
         desbloqueado: false,
         texto: "Hola amoor jeje, ésta carta la tenía pensada para explicarte algunas cosas que olvido hablar o contarte a tí xd, lo sientoooooooooooooooo. Para empezar, mis padres xd, creo que ya es más que obvio que aparezco a ciertas horas, antes, cuando iba a estudiar me quedaba desde que regresaba del colegio hasta las 8 o 9 de la noche conmigo, ahora que no estudio, estoy en la mañana xd como a las 7:30, luego me voy y regreso como a las 2 de la tarde, también conmigo xd, pues el problema es que mis padres son como muy Estrictos, Raros y algo controladores en algunas cosas, no me gusta eso, lo odio, pero aunque si he desarrollado algunas habilidades por eso, también es feo porque pues no puedo hablarles de algunas cosas o pues hacer ciertas cosas que quisiera hacer, literalmente no confían porque según Me conocen y pues NO xd, no del todo al menos, disculpa si a veces me voy muy temprano o regreso más tarde de lo que te digo, mis padres no suelen decirme lo que haremos o a donde iremos, entonces yo calculo y te digo lo que creo que tardaremos porque normalmente eso tardamos, pero enserio discúlpame amoor, te amo mucho y siempre estoy pensando en tí, trato de estar el mayor tiempo posible contigo 💙💙 ."
     },
@@ -43,7 +43,7 @@ const capitulos = [
     {
         numero: 6,
         titulo: "Explicaciones 2 xd",
-        fechaDesbloqueo: "2026-10-24",
+        fechaDesbloqueo: "2026-10-23",
         desbloqueado: false,
         texto: "Pues literal es una continuación jajajaja. Amoor hay algunas cosas que son de nuestro futuro que digamos que son temas delicados, pero por eso quiero hablarlos contigo aunque pues xd falta para que nos veamos y vivamos juntos, hay cosas que sí quiero que hablemos. Como pues el Qué haremos cuando conozcas a mis padres y yo a los tuyos, porque quiero que lo hagamos bien, yo voy bastante en serio contigo xd, te amo, pero si quisiera que te conocieran al menos un poco, talvez hasta cuando nos veamos en persona o quizá algún día en videollamada jaja, quién sabe jeje. Otra cosa sería pues cuando lo hagamos xd, porque mira amoor, si tú quieres entonces yo también quiero, seguramente será cuando tengamos 18 xd y nos veamos por fin, siento que será rara la primera vez jajajaja yo sí me reiría si me pongo nervioso, pero bueno xd, no soy alguien calenturiento, a veces si me siento así porque mis hormonas se ponen locas y prefiero controlarme y calmarme, por eso solo te digo, pero igual no digo que sea algo malo, solo que no es como algo por lo que te quiera y no quiero que pienses que te quiero por sexo o alguna tontería así y disculpa que lo diga así amoor xd; y pues no creo que a tí te molesten tus hormonas y te pongas ajá xd, que yo recuerde, solo unas 2 veces te has puesto así y era muy muy poco jajaja, de igual forma te amooooo jeje, no importa si lo hacemos o no, yo o te amo por eso, te amo por lo rara y perfecta que eres a la vez, jejeje te amoooooooo chichona 💙💙 ."
     },
