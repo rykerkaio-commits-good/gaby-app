@@ -4,16 +4,16 @@ const preguntas = [
         titulo: "Cómo empezó todo 💙",
         subtitulo: "Lo primero que pensé de ti",
         parrafos: [
-            "Mrd, está hermosa, no creo que pueda enamorarla. JAJAJA, básicamente eso fue lo que pensé. 😂",
-            "Aquí puedo contar más sobre cómo empezó todo, lo que sentí al conocerte y esos primeros momentos que recuerdo con cariño."
+            "Mrd, está hermosa, no creo que pueda enamorarla. JAJAJA, básicamente eso fue lo que pensé. xd",
+            "Era un estúpido, no por lo que dije jaja, sino por lo que pensé en ese momento, no porque me crea superior o algo así ahora jajaja, sino porque era muy tonto hace años, en ese tiempo pensaba en puras tonterías que llenaran mi alma con felicidad o placer (y no del malo pues xd) solo buscaba mi bien y no me importaba que pasara con los demás media vez yo estuviera bien, que imbécil era, antes pensaba que nada me pasaría y que era mucho más inteligente que el resto, odio esa parte de mi vida, me da asco, solo me alegro de haber cambiado, comprendí muchas cosas desde que te conocí, gracias amoor, en verdad tú eres la que me cambió y me hizo apreciar algo más que no fuera mi propia existencia, te amo Gabyyyyyyyyyy."
         ]
     },
     {
-        titulo: "Lo que me gusta de ti 💗",
-        subtitulo: "Hay muchas cosas que adoro de ti",
+        titulo: "Mientras éramos amigos",
+        subtitulo: "Todo cambió de una forma increíble",
         parrafos: [
-            "Tu forma de ser. Hay cosas tuyas que simplemente hacen que me den ganas de seguir conociéndote.",
-            "Y todavía me quedan muchas cosas bonitas por descubrir de ti, porque siempre hay algo nuevo que me hace quererte más."
+            "Mientras te conocí y éramos solo amigos, poco a poco fuí pensando cosas raras y malas de manera más lenta y pues rara en ese momento, poco a poco me fuí dando cuenta de que no podía hacer algunas cosas, que tenía límites, hubo un tiempo donde no me gustabas, solo eras una amiga más que por alguna razón terminé conciendo y ya xd.",
+            "Pero hubo un día, un momento en el que cambió todo, yo antes solo veía tus fotos y pensaba que era linda, pero en ese momento el Qué linda cambió a Me gustaa, aunque fué raro para mí en ese momento porque me gustaba alguien más (que era una loca y no lo sabía y me terminó usando xd) pero desde ese día te veía diferente, a pesar de que eras bien seca y callada, a veces ni respondías o eras fría, de alguna manera me seguías gustando y no entendía por qué jeje."
         ]
     },
     {

@@ -187,6 +187,21 @@ const recuerdos = [
     },
 
     {
+        titulo: "Lo tanto que te esfuerzas",
+        texto: "No importa que pase o que tan doloroso sea, siempre veo que te esfuerzas y tratas de mejorar las cosas, me encanta eso, me encanta mucho amoor."
+    },
+
+    {
+        titulo: "Lo orgulloso que me haces estar de tí",
+        texto: "No es que nada más me sienta bien estando orgulloso, sino que estoy orgulloso de tí, de lo que te esfuerzas, de lo increíble que eres, de todo de tí, eres increíble amoor, jamás dejes de esforzarte."
+    },
+
+    {
+        titulo: "Todos los momentos",
+        texto: "Cualquier cosa contigo me encanta, aunque por tiempo no seguiré aquí jeje, recuerda que hay miles de millones de cosas que me gustan de tí, pronto las verás aquí amoor, te adoro Gabyyy."
+    },
+
+    {
         titulo: "Te amo muchísimo 💗",
         texto: "Te amo, Gaby, muchísimo más de lo que te puedas imaginar, cachetona."
     }
