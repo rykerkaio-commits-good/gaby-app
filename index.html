@@ -66,12 +66,58 @@
 <!-- APP -->
 <main class="app">
 
+        <!-- SECRETOS DECORATIVOS -->
+    <div class="secret-sky" aria-label="Detalles secretos">
+
+        <button
+            type="button"
+            class="secret-star"
+            id="secret-star-1"
+            aria-label="Descubrir secreto"
+        >✦</button>
+
+        <button
+            type="button"
+            class="secret-star"
+            id="secret-star-2"
+            aria-label="Descubrir secreto"
+        >✦</button>
+
+        <button
+            type="button"
+            class="secret-star"
+            id="secret-star-3"
+            aria-label="Descubrir secreto"
+        >✦</button>
+
+        <button
+            type="button"
+            class="secret-moon"
+            id="secret-moon"
+            aria-label="Descubrir secreto"
+        >☾</button>
+
+    </div>
 
         <!-- ENCABEZADO -->
         <header class="header">
-            <p class="small-text">Hola cachetona💙</p>
+<button
+    type="button"
+    class="small-text secret-greeting"
+    id="secret-greeting"
+>
+    Hola cachetona💙
+</button>
 
-            <h1>¿No tienes sueño verdad?</h1>
+<h1>
+    ¿No tienes sueño verdad?
+    <button
+        type="button"
+        class="title-sparkle"
+        id="secret-title-sparkle"
+        aria-label="Descubrir secreto"
+    >✦</button>
+</h1>
 
             <p class="subtitle">
                 ¿Qué te gusaría hoy?
@@ -108,6 +154,9 @@
                 </span>
             </button>
 
+
+
+</button>
 
             <button class="mode-card" onclick="openMode('memories')">
                 <span class="icon">😍</span>
@@ -149,8 +198,25 @@
 
         <!-- PIE -->
         <footer>
-            <p>Mereces todo esto y más 💙</p>
-        </footer>
+    <p>
+        <button
+            type="button"
+            class="secret-footer-message"
+            id="secret-footer-message"
+        >
+            Mereces todo esto y más 💙
+        </button>
+    </p>
+
+    <button
+        type="button"
+        class="secret-footer-detail"
+        id="secret-footer-detail"
+        aria-label="Descubrir otro secreto"
+    >
+        ✧
+    </button>
+</footer>
 
     </main>
 
@@ -179,13 +245,20 @@
 <section id="chat-configuracion">
     <div class="chat-encabezado">
         <div>
-            <p class="chat-etiqueta">UN LUGAR PARA NOSOTROS 💙</p>
-            <h2>Nuestro pequeño chat</h2>
+            <p class="chat-etiqueta">Hola de nuevo cachetona jeje 💙</p>
+            <h2>Nuestro chat todo tierno como tú xd</h2>
             <p class="chat-descripcion">
-                Para hablar, contarnos cosas y compartir nuestro día.
+                Por si no quieres hablar conmigo o no estoy y quieres hablar conmigo.
             </p>
         </div>
-        <span class="chat-corazon">♡</span>
+   <button
+    type="button"
+    class="chat-corazon"
+    id="secret-chat-heart"
+    aria-label="Descubrir un secreto"
+>
+    ♡
+</button>
     </div>
 
     <p id="chat-estado" role="status">
@@ -234,7 +307,13 @@
     </form>
 </section>
 
-
+<!-- Pequeño secreto al final de la página -->
+<button
+    type="button"
+    class="secret-menu-heart"
+    id="secret-menu-heart"
+    aria-label="Descubrir un secreto"
+>♡</button>
 
 <script type="module" src="script.js"></script>
 <script type="module" src="chat.js?v=2"></script>

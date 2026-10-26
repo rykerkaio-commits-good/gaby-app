@@ -700,6 +700,8 @@ window.mostrarListaHistoria = mostrarListaHistoria;
    MENSAJE DE BIENVENIDA
 ========================= */
 
+
+
 const welcomeScreen = document.getElementById("welcome-screen");
 const welcomeClose = document.getElementById("welcome-close");
 
@@ -711,3 +713,117 @@ if (welcomeScreen && welcomeClose) {
     });
 
 }
+
+/* =========================
+   TEXTOS DE LOS SECRETOS
+========================= */
+
+const secretTexts = {
+    greeting: "Xd te amoooooooo y duerme yaa que también tienes que descansar amoor. 💙",
+    star1: "Xd espera y verás. ✨",
+    star2: "Xd 2, no esperes nada. 🌌",
+    star3: "Xd 3, decide que decir o nada. 💙",
+    moon: "Duerme duerme duerme cachetona jeje. 🌙",
+    titleSparkle: "Six Seven jajajajajajajajjaja. ✦",
+    footerMessage: "Te amo mucho amoor, enserio pienso que mereces todo esto y mucho más, yo sé que por la distancia algunas cosas son difíciles, pero pues aunque nuestra relación sea 7 veces más complicada, juntos podemos hacer que sea 7 veces más fuerte y hermosa, hago todo esto porque sé que lo mereces, mereces una vida increíble y te prometo que te la haré realidad aunque cueste, sabes que me da miedo perderte pero confío en tí y sé que juntos podemos hacer lo que sea, te amo mucho amoor, ojalá ya pronto nos casemos jeje, te adoro Catalina xd, toda tierna y hermosa, y chichona también xd. 💌",
+    footerDetail: "Esto no es el final, aún hay muchos más proyectos y regalos que quiero darte jeje, sé que pues toca esperar y no eres muy buena en eso jajaja pero creéme que valdrá la pena esperar, algunas son en fechas especiales y otros simplemente llegarán de sorpresa, te amo Gabyyyyyy. ✧",
+    menuHeart: "Ahhhh el corazón azul, ya sabes que significa para mí, lo eres todo para mí y espero poder ser lo mejor para tí, cada día mejoro y no pararé de mejorar hasta que seas muy muy feliz y haga realidad tu vida soñada, eres lo mejor amoor, te amo mucho mucho muchísimo más de lo que crees jeje. 💙",
+    chatHeart: "Hice este chat porque sé que a veces te sientes mal y quieres dejar todo, desaparecer y no hablar con nadie; yo también me he sentido muy mal y sé lo doloroso que puede ser todo a veces, usa el chat cuando te quieras desahogar, si no quieres hablar del tema del que te desahogues solo dímelo, pero aún así haré lo que sea para ayudarte y hacer que te sientas mejor, eres lo mejor de mi vida y no pienso dejar que algo te haga sentir mal, eres increíble, eres maravillosa y nada cambiaría eso amoor, te adoro Gabyyyyy. ♡"
+};
+
+/* =========================
+   TÍTULOS DE LOS SECRETOS
+========================= */
+
+const secretTitles = {
+    greeting: "Hola hola hola xd 💙",
+    star1: "Depende de qué encuentres ✨",
+    star2: "Y como lo unas 🌌",
+    star3: "Te daré una sopresa jeje 💙",
+    moon: "Te amooo dormilona 🌙",
+    titleSparkle: "6+7? ✦",
+    footerMessage: "Algo tan especial como tú 💌",
+    footerDetail: "Jejeje te adoro mucho y ya",
+    menuHeart: "Lo más bello de mi vida 💙",
+    chatHeart: "No te guardes las cosas, siempre es peor que expresar lo que sientes ♡"
+};
+
+/* =========================
+   MOSTRAR UN SECRETO
+========================= */
+
+function mostrarSecreto(clave) {
+    const modal = document.getElementById("modal");
+    const icon = document.getElementById("modal-icon");
+    const title = document.getElementById("modal-title");
+    const body = document.getElementById("modal-body");
+
+    if (!modal || !icon || !title || !body) {
+        console.error("No se encontraron los elementos del modal.");
+        return;
+    }
+
+    const texto = secretTexts[clave];
+
+    if (!texto) {
+        console.warn("No existe el secreto:", clave);
+        return;
+    }
+
+    icon.textContent = "✦";
+title.textContent = secretTitles[clave] || "Un pequeño secreto para ti 💙";
+
+    body.innerHTML = "";
+
+    const mensaje = document.createElement("p");
+    mensaje.textContent = texto;
+
+    const botonVolver = document.createElement("button");
+    botonVolver.type = "button";
+    botonVolver.className = "content-option";
+    botonVolver.textContent = "Volver 💙";
+    botonVolver.addEventListener("click", closeMode);
+
+    body.appendChild(mensaje);
+    body.appendChild(botonVolver);
+
+    modal.classList.add("active");
+}
+
+
+/* =========================
+   CONECTAR LOS BOTONES
+========================= */
+
+const botonesSecretos = {
+    "secret-greeting": "greeting",
+    "secret-star-1": "star1",
+    "secret-star-2": "star2",
+    "secret-star-3": "star3",
+    "secret-moon": "moon",
+    "secret-title-sparkle": "titleSparkle",
+    "secret-footer-message": "footerMessage",
+    "secret-footer-detail": "footerDetail",
+    "secret-menu-heart": "menuHeart",
+    "secret-chat-heart": "chatHeart"
+};
+
+Object.entries(botonesSecretos).forEach(([id, clave]) => {
+    const boton = document.getElementById(id);
+
+    if (!boton) {
+        console.warn("No se encontró el botón secreto:", id);
+        return;
+    }
+
+    boton.addEventListener("click", () => {
+        mostrarSecreto(clave);
+    });
+});
+
+
+/* =========================
+   HACER LA FUNCIÓN ACCESIBLE
+========================= */
+
+window.mostrarSecreto = mostrarSecreto;

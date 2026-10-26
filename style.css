@@ -1557,3 +1557,505 @@ footer {
         font-size: 1.1rem;
     }
 }
+
+
+/* =========================================
+   SECRETOS OCULTOS DE GABY APP
+   Se añaden al final para conservar
+   los estilos que ya existen.
+========================================= */
+
+
+/* CAPA DE DETALLES SECRETOS */
+
+.secret-sky {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+
+    overflow: visible;
+    pointer-events: none;
+}
+
+.secret-sky button {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    color: var(--blue);
+    background: transparent;
+    border: 0;
+
+    line-height: 1;
+    cursor: pointer;
+    pointer-events: auto;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+.secret-sky button:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+    text-shadow: 0 0 14px rgba(169, 201, 255, 0.9);
+}
+
+
+/* LAS TRES ESTRELLAS ESPECIALES */
+
+.secret-star {
+    width: 25px;
+    height: 25px;
+
+    font-size: 21px;
+    color: #d6e4ff !important;
+
+    text-shadow:
+        0 0 7px rgba(169, 201, 255, 0.8),
+        0 0 17px rgba(169, 201, 255, 0.35);
+}
+
+#secret-star-1 {
+    top: 155px;
+    left: 3%;
+}
+
+#secret-star-2 {
+    top: 360px;
+    right: 2%;
+    font-size: 18px;
+}
+
+#secret-star-3 {
+    top: 610px;
+    left: 7%;
+    font-size: 19px;
+}
+
+
+/* LA LUNA DEL EXTREMO SUPERIOR DERECHO */
+
+.secret-moon {
+    top: 24px;
+    right: 5px;
+
+    width: 38px;
+    height: 38px;
+
+    font-size: 31px;
+    color: #c7b8ff !important;
+
+    text-shadow: 0 0 15px rgba(199, 184, 255, 0.35);
+}
+
+.secret-moon:hover {
+    transform: rotate(-12deg) scale(1.1) !important;
+}
+
+
+/* SALUDO SECRETO */
+
+.secret-greeting {
+    padding: 0;
+    background: transparent;
+    border: 0;
+
+    font-family: inherit;
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+.secret-greeting:hover {
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(169, 201, 255, 0.6);
+}
+
+
+/* BRILLO JUNTO AL TÍTULO */
+
+.title-sparkle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 27px;
+    height: 30px;
+    margin-left: 3px;
+    padding: 0;
+
+    vertical-align: middle;
+
+    color: var(--blue);
+    font-size: 20px;
+
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+.title-sparkle:hover {
+    color: #ffffff;
+    transform: rotate(20deg) scale(1.2);
+    text-shadow: 0 0 12px var(--blue);
+}
+
+
+/* CORAZÓN ENTRE LAS OPCIONES DEL MENÚ */
+
+.secret-menu-heart {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+
+    width: 36px;
+    height: 30px;
+    margin: -3px 0;
+
+    color: #a9c9ff;
+    font-size: 19px;
+
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    filter: drop-shadow(0 0 5px rgba(169, 201, 255, 0.3));
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+.secret-menu-heart:hover {
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 9px rgba(169, 201, 255, 0.8));
+}
+
+
+/* MENSAJE SECRETO DEL PIE DE PÁGINA */
+
+.secret-footer-message {
+    padding: 3px 6px;
+
+    color: inherit;
+    font: inherit;
+
+    background: transparent;
+    border: 0;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+.secret-footer-message:hover {
+    color: var(--blue);
+    text-shadow: 0 0 10px rgba(169, 201, 255, 0.4);
+}
+
+
+/* PEQUEÑO DETALLE JUNTO AL PIE DE PÁGINA */
+
+.secret-footer-detail {
+    display: block;
+
+    width: 30px;
+    height: 25px;
+    margin: 7px auto 0;
+    padding: 0;
+
+    color: #a9c9ff;
+    font-size: 19px;
+
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+.secret-footer-detail:hover {
+    color: #ffffff;
+    transform: rotate(25deg) scale(1.2);
+    text-shadow: 0 0 10px var(--blue);
+}
+
+
+/* CORAZÓN SECRETO DEL CHAT
+   Conserva el funcionamiento del chat. */
+
+#chat-configuracion button.chat-corazon {
+    flex: 0 0 auto;
+
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #b5c5ff;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1;
+
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+#chat-configuracion button.chat-corazon:hover {
+    color: #ffffff;
+    background: rgba(181, 197, 255, 0.08);
+    transform: scale(1.1);
+    text-shadow: 0 0 12px rgba(181, 197, 255, 0.7);
+}
+
+
+/* DETALLES SECRETOS DENTRO DE VENTANAS
+   Preparado para los pequeños detalles
+   que añadiremos desde JavaScript. */
+
+.secret-corner {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 24px;
+    min-height: 24px;
+    padding: 3px;
+
+    color: #a9c9ff;
+    font-size: 16px;
+
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    opacity: 0.65;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+.secret-corner:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(169, 201, 255, 0.7);
+}
+
+
+/* FANTASMITA DE «NADA MÁS» */
+
+.secret-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 48px;
+    min-height: 48px;
+    margin: 8px 0 16px;
+    padding: 4px;
+
+    font-size: 38px;
+    line-height: 1;
+
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    filter: drop-shadow(0 0 8px rgba(199, 184, 255, 0.25));
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+.secret-ghost:hover {
+    transform: translateY(-4px) rotate(-5deg);
+    filter: drop-shadow(0 0 12px rgba(199, 184, 255, 0.65));
+}
+
+
+/* ACCESIBILIDAD: MENOS MOVIMIENTO */
+
+@media (prefers-reduced-motion: reduce) {
+    .secret-sky button,
+    .secret-greeting,
+    .title-sparkle,
+    .secret-menu-heart,
+    .secret-footer-message,
+    .secret-footer-detail,
+    #chat-configuracion button.chat-corazon,
+    .secret-corner,
+    .secret-ghost {
+        transition: none;
+    }
+}
+
+
+/* AJUSTES PARA TELÉFONOS */
+
+@media (max-width: 560px) {
+    .secret-moon {
+        top: 10px;
+        right: 0;
+
+        width: 32px;
+        height: 32px;
+
+        font-size: 27px;
+    }
+
+    .secret-star {
+        width: 23px;
+        height: 23px;
+        font-size: 19px;
+    }
+
+    #secret-star-1 {
+        top: 125px;
+        left: -5px;
+    }
+
+    #secret-star-2 {
+        top: 315px;
+        right: -5px;
+    }
+
+    #secret-star-3 {
+        top: 540px;
+        left: 0;
+    }
+
+    .title-sparkle {
+        width: 23px;
+        height: 26px;
+        font-size: 17px;
+    }
+
+    .secret-menu-heart {
+        margin: -1px 0;
+    }
+
+    #chat-configuracion button.chat-corazon {
+        width: 42px;
+        min-width: 42px;
+        height: 42px;
+        font-size: 32px;
+    }
+}
+
+
+/* AJUSTES: SECRETOS MÁS DISCRETOS */
+
+/* Estrellas pequeñas, apartadas de las tarjetas */
+.secret-star {
+    width: 17px;
+    height: 17px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* Primera estrella: al margen izquierdo */
+#secret-star-1 {
+    top: 145px;
+    left: -10px;
+}
+
+/* Segunda estrella: al margen derecho */
+#secret-star-2 {
+    top: 365px;
+    right: -10px;
+    font-size: 12px;
+}
+
+/* Tercera estrella: un poco más abajo */
+#secret-star-3 {
+    top: 625px;
+    left: -8px;
+    font-size: 13px;
+}
+
+/* El corazón ya no ocupa una casilla del menú */
+.secret-menu-heart {
+    display: flex;
+    position: relative;
+    grid-column: auto;
+    justify-self: center;
+    align-self: auto;
+
+    width: 25px;
+    height: 22px;
+    min-width: 0;
+    margin: 12px auto 8px;
+    padding: 0;
+
+    color: #a9c9ff;
+    font-size: 13px;
+    opacity: 0.42;
+    filter: none;
+
+    transition: opacity 0.2s ease,
+                color 0.2s ease;
+}
+
+.secret-menu-heart:hover {
+    color: #dce7ff;
+    opacity: 0.9;
+    transform: none;
+    filter: none;
+}
+
+/* En móvil, las estrellas siguen siendo discretas */
+@media (max-width: 560px) {
+    #secret-star-1 {
+        top: 135px;
+        left: -5px;
+    }
+
+    #secret-star-2 {
+        top: 350px;
+        right: -5px;
+    }
+
+    #secret-star-3 {
+        top: 600px;
+        left: -4px;
+    }
+
+    .secret-menu-heart {
+        margin-top: 10px;
+    }
+}
