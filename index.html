@@ -315,6 +315,78 @@
     aria-label="Descubrir un secreto"
 >♡</button>
 
+
+<!-- REPRODUCTOR FLOTANTE DE SPOTIFY -->
+<div class="spotify-widget" id="spotify-widget">
+
+    <button
+        type="button"
+        class="spotify-toggle"
+        id="spotify-toggle"
+        aria-expanded="false"
+        aria-controls="spotify-panel"
+    >
+        <span aria-hidden="true">♫</span>
+        Nuestra música 💙
+        <span class="spotify-flecha" id="spotify-flecha">⌃</span>
+    </button>
+
+    <div
+        class="spotify-panel"
+        id="spotify-panel"
+        hidden
+    >
+        <div class="spotify-panel-header">
+            <div>
+                <p class="spotify-titulo">Playlist para mi cachetona hermosa jeje</p>
+                <p class="spotify-subtitulo">Un poquito de ti, un poquito de mí 💙</p>
+            </div>
+
+            <button
+                type="button"
+                id="spotify-cerrar"
+                class="spotify-cerrar"
+                aria-label="Cerrar reproductor"
+            >×</button>
+        </div>
+
+        <iframe
+            title="Playlist para mi cachetona hermosa jeje"
+            src="https://open.spotify.com/embed/playlist/4JVNc5cq79gBkglRO2vRg4?utm_source=generator"
+            width="100%"
+            height="352"
+            style="border: 0; border-radius: 12px;"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+        ></iframe>
+    </div>
+</div>
+
+<script>
+(function () {
+    const toggle = document.getElementById("spotify-toggle");
+    const panel = document.getElementById("spotify-panel");
+    const cerrar = document.getElementById("spotify-cerrar");
+    const flecha = document.getElementById("spotify-flecha");
+
+    function cambiarReproductor(abrir) {
+        panel.hidden = !abrir;
+        toggle.setAttribute("aria-expanded", String(abrir));
+        flecha.textContent = abrir ? "⌄" : "⌃";
+    }
+
+    toggle.addEventListener("click", function () {
+        cambiarReproductor(panel.hidden);
+    });
+
+    cerrar.addEventListener("click", function () {
+        cambiarReproductor(false);
+        toggle.focus();
+    });
+})();
+</script>
+
+
 <script type="module" src="script.js"></script>
 <script type="module" src="chat.js?v=2"></script>
 </body>
