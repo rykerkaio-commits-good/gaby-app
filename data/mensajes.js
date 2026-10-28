@@ -269,6 +269,174 @@ const mensajes = [
     {
         tipo: "normal",
         fecha: null,
+        titulo: "Mi parte favorita del día",
+        texto: "Siempre, mi parte davorita del día resulta siendo cuando hablo contigo, talvez a veces no hablemos mucho, pero siempre me recuerdas lo afortunado que soy de tener a alguien tan increíble como tú en mi vida, te adoro Gabyyyyyyy."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Me encantas y ya jeje",
+        texto: "Casi siempre te doy una explicación super larga e incompleta del por qué me gustas, hay demasiadas cosas de tí que me encantan, pero, de la nada a veces solo pienso Que maravillosa es ella jeje la amo, y hasta eso me encanta de tíiiiiiiiiiiiiiiii."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Estaré loco toda mi vida po tí xd",
+        texto: "Antes había veces en las que literalmente no pensaba nada o no tenía nada que pensar, y ahora que estás tú no puedo parar de pensarte, ocupas el 99.9% de mi mente, mi alma y mi corazón, el 0.01% lo uso para vivir jajaja."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Me gusta que me gustes xd",
+        texto: "Aunque suena raro, enserio me encanta que me gustes tantooooo, me encantas amoor, me encantas demasiado más de lo que crees, me encanta estar contigo y saber que vivo con alguien tan maravillosa y hermosa y perfecta en mi vida como tú, eres lo mejooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooor."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Fué suerte o quizá el destino",
+        texto: "Pero estoy muy agradecido con Dios, porque de las millones de personas que existen en el mundo, de las millones de persona que pude haber conocido, te conocí a tí y cambiaste mi vida para bien, aunque haya sido raro el conocernos o muy improbable, estoy muy feliz de haberte conocido amoor, te amooooooooooo Gabyyyyyyyyyyyyyyyy."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "A veces te imagino amoor",
+        texto: "Muchas veces imagino como sería tenerte aquí a mi lado, o nada más calculo la diferencia de altura jajaja, o te imagino con alguna prenda linda, un vestido o una lenceria si estoy rarito jajajaja, pero siempre y enserio siempre, me encantas, me ENCANTAS DEMASIADO CACHETONA."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Pensar en tí es lo mejor",
+        texto: "Bueno... por ahora jeje, porque luego estaré a tu lado besándote jejeje; pero aparte de que mi mente usa su 99.9% de su capacidad para pensarte, no necesito gastar energía jaja, así que es doblemente increíble y hermoso pensar en tí, en lo cachetona y tiernaaaaaaaa que estás, en cuanto te amoooooo y en lo preciosa que ereeeeeeeeeeeeeeees."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Al final si tengo una debilidad",
+        texto: "Y obviamente eres tú, mi única debilidad es una cachetona tierna y preciosa que se llama Gabriela Catalina, y aunque me super encanta Catalina xd, no te gusta ese nombre, mala, te puedo llamar Catalina????????????????? jeje."
+    },
+    
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Me vuelves adicto y me encanta xd",
+        texto: "Soy adicto a tí, a tu amor y a lo que me haces sentir, es hermoso, es inceíble, me hace sentir muy muy muy bien amoor, eres lo mejoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooor."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Nunca me canso de tí",
+        texto: "No importa si estamos hablando sobre qué marca es tu licuadora o sobre un sabor de helado, a mí me encanta conocerte, me encanta saber más de tí, me encantas tú y eso jamás cambiará."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Me gustas demasiado",
+        texto: "Aunque esté pensando en algo más, siempre estoy pensando en tí indirectamente, eres muy especial para mí y enserio pienso bastante en tí jeje, eres perfecta amoor, eres tan lindaaaaaaaaaaaaaaaaaaaaaaa y cachetonaaaaaaaaaaaaaaaaaaa, me encanta como eres, me encanta tu alma literalmentee."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Qué hermoso sentir lo que siento",
+        texto: "Yo sé que algún día encontraré como explicarte o hacer que sientas lo que yo siento, pero mientras, es el sentimiento más hermoso que he sentido en mi vida, es placentero xd, es perfecto, es calma pura y felicidad máxima, que increíble eres amoor, te adorooooooooooooooooooooooooooooooo."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Xd ya hay efectos secundarios",
+        texto: "Ahora cada vez que me escribes o que veo un mensaje en ig, pienso en tí y sonrío jeje, eres perfectaaaaaaaaaaaaaaaaa."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Eres mi persona favorita",
+        texto: "Ni con Spiderman o Iron man me pasa lo que me pasa contigo, a veces estoy haciendo limpieza o jugando y de la nada pienso en tí, me encanta esoooooooo."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Cuando me escribes",
+        texto: "Normalmente soy alguien multitareas xd, y siempre dejo un espacio en la pantalla para ver si me llega un mensaje tuyo, cada que aparece que alguien me escribió me alegro porque pienso que eres tú, y si no, me pongo a extrañarte maaaaas."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Escribo esto mientras hablamos",
+        texto: "Y eres bien seca jajajaja, me encanta pero tampoco te pongas muy seca amoor, xd te amo cachetona."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "¿¿¿Qué estarás haciendo???",
+        texto: "Muchas veces me pregunto eso en un momento random del día, me gusta imaginar como sería vivir juntos también, aunque no sé qué haríamos si nos bañamos juntos jajajajajaja, siento que me voy a poner rarito y vamos a terminar haciendolo, o solo nos bañamos y ya xd."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Tú eres mi pensamiento intrusivo",
+        texto: "A veces estoy programando y de la nada me dan ganas de ver tus fotos o mandarte algún reel o algo xd, siempre pasa cuando estoy concentrado en algo muy importante o cuando juego."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Canciones lindas",
+        texto: "A mí me gusta escuchar casi de todo jajaja, pero me gusta probar géneros nuevos y raros o solo escuchar una nueva canción, muchas de esas me recuerdan a tí, por eso las pongo en la playlist de la página jeje."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Me haces equivocarme jajaja",
+        texto: "Yo escribo muy exacto aunque esté usando la compu, pero cuando estoy hablando contigo, me gana la emoción y la felicidad así que escribo rápido y normalmente me equivoco y escribo mal xd."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Te quieroo veeeeer yaaaaa",
+        texto: "En serio que ganas tengo de verte en persona por fin, en besarte y demostrarte que sí sabes a chocolate jeje, tengo ganas de abrazarte, de acariciarte y besar toda tu carita hermosaaaaaaaaa, quiero estar contigo yaaa."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Quiero cocinarte cosas ricas",
+        texto: "Siempre imagino cómo sería cocinarte a tí, me llena de felicidad saber que algún día te cocinaré todas las cosas ricas que sé hacer y las quiero aprender a hacer."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "Si tienes muchas cosas que hacer",
+        texto: "Descansa un rato, no tienes que hacer todo ahora, también debes de cuidarte y no sobecargarte, sé que eres responsable y muy inteligente, pero trata de no sobrecargarte."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
+        titulo: "",
+        texto: "."
+    },
+
+    {
+        tipo: "normal",
+        fecha: null,
         titulo: "Solo porque sí 💙",
         texto: "No necesitas hacer algo muy exagerado para que me gustes, literalmente tu existencia es perfecta y nada ni nadie logrará ser tan importante en mi vida como lo eres tú."
     }

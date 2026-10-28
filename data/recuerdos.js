@@ -202,6 +202,66 @@ const recuerdos = [
     },
 
     {
+        titulo: "Tu manera de hablame jeje",
+        texto: "Aunque a veces seas seca o hables un poco sin amor xd, a mí me encantas siempree, aunque hablemos de bobadas y tonterías o de lencerias o algo más, a mí me encantaaaaaaaaaaas."
+    },
+
+    {
+        titulo: "Tus bobadas xd",
+        texto: "A veces no sé si preocuparme o reírme y agradercerte por ser tan increíble, me encantas demasiado que ya no sé como más decirlo jeje, me encantan tus bobadas y me enamoras siempreee."
+    },
+
+    {
+        titulo: "Tu lado celoso",
+        texto: "Aunque digas que no eres casi nada celosa, yo sé que sí jejeje y algunas veces lo has mostrado, pero aunque seas celosa o fueras tóxica, a mi me encantas y no me enoja ni molesta que seas celosa jeje, soy todo tuyo y solo te amo a tí cachetona lindaaa, aunque si me encanta que seas celosa xd."
+    },
+
+    {
+        titulo: "Tu manera de ver las cosas",
+        texto: "Talvez yo diga que es una mrd, pero tú ves algo bueno siempre, no importa que sea; enserio me encantas amoor, me encanta que seas tú."
+    },
+
+    {
+        titulo: "Las cosas que te gustan jeje",
+        texto: "Por ahora sé pocas, pero espero que pronto pueda aprender más de tí, mientras, ya apendí a hacer helado y sushi jeje, te amoooooooooooooooo."
+    },
+
+    {
+        titulo: "Lo única y perfecta que eres",
+        texto: "Eres como el The Legend Of Zelda: Ocarina of Time, tal vez no es el más nuevo o el que tiene mejor jugabilidad o gráficos, pero aún así jamás me canso de jugarlo y apreciarlo como la obra de arte que es; así me siento contigo, eres tan perfeectaa Gabyyyyyyy."
+    },
+
+    {
+        titulo: "Me gusta escucharte",
+        texto: "Aunque más bien sería conocerte xd, pero me encanta cuando me cuentas muchas cosas como tu día o lo que haces o como te sientes o cualquier otra cosa, aunque pues eres algo seca jajajaja, me encantaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas demasiadoooooooooooooooooooooo."
+    },
+
+    {
+        titulo: "Lo que te hace diferente",
+        texto: "Aunque podría hacer un excel de lo tan perfecta que eres, también me encanta que seas tú, que seas una persona única, con gustos y personalidad, tus ideas y bobadas, y también tus días buenos y los malos, me gusta me encanta y me super enamora que seas tú."
+    },
+
+    {
+        titulo: "Tus gustos musicales",
+        texto: "Aunque son muy muy diferentes a los míos xd, siempre escucho tu playlist y el tipo de música que a tí te gusta, y me empieza a gustar jejeje, me recuerda a tí y eso es hermoso."
+    },
+
+    {
+        titulo: "Lo que me enseñas",
+        texto: "Talvez no te das cuenta pero tú me enseñas muchas cosas cada día, aunque seas cosas pequeñas o algo muy grande, tú me has enseñado muchas cosas que me recuerdan lo afortunado que soy de tenerte a tí en mi vida."
+    },
+
+    {
+        titulo: "Saber que estamos juntos",
+        texto: "Ya no solo soy yo o solo eres tú, ahora somos nosotros y podemos hacer muchas cosas juntos, recuerda que ya no tienes que pasar nada sola, yo estoy contigo siempre y voy a tratar de ayudarte lo más que pueda, siempre te voy a apoyar amoor, en todo, te amooooooooo muchooooo Gabicitaaaaa lindaaaaaaaaaaa."
+    },
+
+    {
+        titulo: "Los apodos que me haces pensar xd",
+        texto: "Aunque me encanta Gabriela y llamarte Gaby, también me gustaría decirte Catalina (me fascina) o Gabycita/Gabicita/Gabisita o Gabyta o Gabs (me encanta) o mi reina o mi princesa o mi Sol o mi niña o, el mejor de todos talvez, mi cachetona jejeje."
+    },
+
+    {
         titulo: "Te amo muchísimo 💗",
         texto: "Te amo, Gaby, muchísimo más de lo que te puedas imaginar, cachetona."
     }
