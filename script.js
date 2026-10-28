@@ -410,11 +410,17 @@ function mostrarHistoria(index) {
 }
 
 
+
 /* =========================
    MOSTRAR MENSAJE
 ========================= */
 
-let ultimoMensaje = null;
+// Cantidad de mensajes que deben pasar
+// antes de que uno pueda volver a aparecer.
+const ENFRIAMIENTO_MENSAJES = 15;
+
+// Historial de los últimos mensajes mostrados.
+let historialMensajes = [];
 
 function mostrarMensaje() {
 
@@ -425,38 +431,50 @@ function mostrarMensaje() {
         String(ahora.getMonth() + 1).padStart(2, "0") + "-" +
         String(ahora.getDate()).padStart(2, "0");
 
-    // Buscar mensajes especiales para hoy
+    // Buscar mensajes especiales para hoy.
     const especialesDeHoy = mensajes.filter(mensaje =>
         mensaje.tipo === "especial" &&
         mensaje.fecha === hoy
     );
 
-    // Si hay especiales, tienen prioridad
+    // Los mensajes especiales conservan su prioridad.
     const disponibles = especialesDeHoy.length > 0
         ? especialesDeHoy
         : mensajes.filter(mensaje =>
-            !mensaje.tipo || mensaje.tipo === "normal"
+            (!mensaje.tipo || mensaje.tipo === "normal") &&
+            mensaje.titulo?.trim() &&
+            mensaje.texto?.trim()
         );
 
     if (disponibles.length === 0) {
         return;
     }
 
-    let mensaje;
+    // Evitar los mensajes que aparecieron recientemente.
+    let candidatos = disponibles.filter(mensaje =>
+        !historialMensajes.includes(mensaje)
+    );
 
-    if (disponibles.length === 1) {
-        mensaje = disponibles[0];
-    } else {
-        do {
-            mensaje =
-                disponibles[
-                    Math.floor(Math.random() * disponibles.length)
-                ];
-        } while (mensaje === ultimoMensaje);
+    // Si todos están en el historial, permitir que
+    // vuelvan a aparecer para evitar que se bloquee.
+    if (candidatos.length === 0) {
+        historialMensajes = [];
+        candidatos = disponibles;
     }
 
-    ultimoMensaje = mensaje;
+    // Elegir un mensaje aleatorio entre los candidatos.
+    const mensaje =
+        candidatos[Math.floor(Math.random() * candidatos.length)];
 
+    // Guardar el mensaje en el historial.
+    historialMensajes.push(mensaje);
+
+    // Conservar únicamente los últimos 15 mensajes.
+    if (historialMensajes.length > ENFRIAMIENTO_MENSAJES) {
+        historialMensajes.shift();
+    }
+
+    // Mostrar el mensaje.
     document.getElementById("modal-icon").textContent = "💙";
 
     document.getElementById("modal-title").textContent =
@@ -477,6 +495,7 @@ function mostrarMensaje() {
 
     `;
 }
+
 
 /* =========================
    MENSAJE DE HOY
