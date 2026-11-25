@@ -105,7 +105,7 @@ const capitulos = [
     },
 
     {
-        numero: 11,
+        numero: 13,
         titulo: "Xd por qué soy así?????????",
         fechaDesbloqueo: "2026-10-28",
         desbloqueado: false,
